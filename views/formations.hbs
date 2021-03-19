@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<p>{{description}}</p>
+
+<table>
+    <tr>
+        <th>Formations MongoDB</th>
+    </tr>
+    {{#each formationsmongo}}
+    <tr>
+        <td><a href="/formations/{{this.page}}">{{this.nom}}</a></td>
+    </tr>
+    {{/each}}
+    <tr>
+        <th>Formations NodeJS</th>
+    </tr>
+    {{#each formationsnode}}
+    <tr>
+        <td><a href="/formations/{{this.page}}">{{this.nom}}</a></td>
+    </tr>
+    {{/each}}
+</table>
